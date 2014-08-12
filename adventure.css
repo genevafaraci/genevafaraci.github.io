@@ -1,0 +1,40 @@
+body{
+	background-image: url(main_background.png);
+	margin-top: 40px;
+	margin-left: 130px;
+	font-size: 17px;
+}
+#storytext{
+	background-color: rgba(214, 233, 187, .9);
+	border: dashed 2px #4F0909;
+	padding: 10px;
+	width: 800px;
+}
+span{
+	opacity: .9;
+}
+#title{
+	color: #260303;
+}
+form{
+	background-color: rgba(128, 89, 46, 1);
+	width: 345px;
+	padding: 10px;
+	border: dashed 2px #4F0909;
+}
+img{
+	padding: 3px;
+}
+input#go{
+	border-color: #4F0909;
+	background-color: #5b784e;
+	border-radius: 0.5em;
+	font-weight: bold;
+}
+input#choice{
+	border-color: #4F0909;
+	background-color: rgba(225,187,130,.9);
+}
+a{
+	color: #4F0909;
+}
