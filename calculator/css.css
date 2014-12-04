@@ -1,0 +1,80 @@
+body{
+	background-color: rgb(158,29,29);
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#page{
+	margin-top: 100px;
+}
+h1{
+	text-align: center;
+	font-style: italic;
+}
+/*Styles for the calculator*/
+#calculator{
+	background-color: rgb(70,0,0);
+	color:white;
+	float: left;
+	padding: 10px;
+	margin-right:20px; 
+	margin-left: 150px;
+	width: 270px;
+	height:270px;
+	border:1px;
+	border-style: dashed;
+	border-radius: 25px;
+	box-shadow:5px 5px black;	
+}
+#display{
+	background-color: white;
+	width: 250px;
+	height: 20px;
+	padding: 10px;
+	border:4px;
+	border-radius: 25px;
+	margin-bottom: 10px;
+	color: black;
+}
+.row{
+	width: 250px;
+	/*text-align: center;*/
+	margin: 15px;
+	margin-left: 20px;
+}
+button{
+	padding: 9px;
+	border:1px;
+	border-radius: 5px;
+	background-color: #A2A2A2;
+	font-weight: bold;
+}
+
+/*Styles for the character*/
+#character{
+}
+#lips{
+	padding: 10px;
+	padding-right: 175px;
+	width: 600px;
+	height: 300px;
+	float: left;
+	
+}
+#speachBubble{
+	float: right;
+	background-color: #E8E8E8;
+	border:4px;
+	border-radius: 10px;
+	padding: 10px;
+	width: 300px;
+	box-shadow:10px 10px black;	
+	font-style: italic;
+}
+
+#speach{
+	padding-bottom: 10px;
+}
+
+footer{
+	margin-top: 60px;
+	float: left;
+}

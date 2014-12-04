@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cali</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="caliJS.js"></script>
+</head>
+<body onload="name()">
+	<h1>Cali the Calculator</h1>
+	<div id="page">
+		<div id="calculator">
+			<div id="display"></div>
+			<div class="row">
+				<button id="1" onclick="mathNum(1)">1</button>
+				<button id="2" onclick="mathNum(2)">2</button>
+				<button id="3" onclick="mathNum(3)">3</button>
+				<button id="plus" onclick="operate('+')">+</button>
+				<button id="times" onclick="operate('*')">X</button>
+			</div>	
+			<div class="row">
+				<button id="4" onclick="mathNum(4)">4</button>
+				<button id="5" onclick="mathNum(5)">5</button>
+				<button id="6" onclick="mathNum(6)">6</button>
+				<button id="minus" onclick="operate('-')">-</button>
+				<button id="divide" onclick="operate('/')">/</button>
+			</div>
+			<div class="row">
+				<button id="7" onclick="mathNum(7)">7</button>
+				<button id="8" onclick="mathNum(8)">8</button>
+				<button id="9" onclick="mathNum(9)">9</button>
+				<button id="0" onclick="mathNum(0)">0</button>
+				<button id="equal" onclick="calculate()">=</button>
+			</div>
+			<div class="row">
+				<button id="random" onclick="random()">Random</button>				
+			</div>
+		</div>
+		<div id="lips">
+			<img src="character-transparent.png" width="255" height="103" alt="lips or Cali">
+			<div id="speachBubble">
+				<div id="speach"></div>
+				<button onclick="help()">Help</button>
+				<button onclick="about()">About Me</button>
+				<button onclick="location.reload();">Start Over?</button>
+			</div>
+		</div>
+	</div>
+<footer>Copyright &copy; Geneva Faraci 2014</footer>
+</body>
+</html>
