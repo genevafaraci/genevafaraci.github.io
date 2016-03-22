@@ -1,0 +1,119 @@
+body{
+    font-family: 'Martel', serif;
+}
+#phoneface{
+    margin: auto;
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 50px;
+    z-index: -1;
+}
+button{
+    font-size: 35px;
+    font-family: 'Martel', serif;
+    padding: 5px 20px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #D1D17D;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 5px #999;
+}
+button:hover {background-color: #858550}
+
+button:active {
+  background-color: #858550;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#phonenumber{
+    background-color: #D1D17D;
+    border-radius: 40%;
+    position: absolute;
+    top:250px;
+    left:200px;
+    height: 50px;
+    width:250px;  
+    z-index: +1;
+    text-align:center;
+    text-indent:5px;
+    padding-top:24px; 
+    font-size: 20px;
+}
+
+#redial:hover {background-color: crimson}
+#call{
+    position: absolute;
+    top:345px;
+    left:270px;
+}
+#call:hover {background-color: #398322}
+#redial{
+    position: absolute;
+    top:160px;
+    left:255px;
+}
+#redial:hover {background-color: crimson}
+#zero{
+    position: absolute;
+    top:450px;
+    left:290px;
+}
+#nine{
+    position: absolute;
+    top:425px;
+    left:195px;
+}
+#eight{
+    position: absolute;
+    top:360px;
+    left:120px;
+}
+#seven{
+    position: absolute;
+    top:270px;
+    left:85px;
+}
+#six{
+    position: absolute;
+    top:175px;
+    left:100px;
+}
+#five{
+    position: absolute;
+    top:95px;
+    left:160px;
+}
+#four{
+    position: absolute;
+    top:50px;
+    left:250px;
+}
+#three{
+    position: absolute;
+    top:55px;
+    left:345px;
+}
+#two{
+    position: absolute;
+    top:100px;
+    left:430px;
+}
+#one{
+    position: absolute;
+    top:185px;
+    left:480px;
+}
+#pound{
+    position: absolute;
+    top:300px;
+    left:480px;
+}
+#asterisk{
+    position: absolute;
+    top:400px;
+    left:420px;
+}

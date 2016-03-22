@@ -1,0 +1,122 @@
+body{
+    /* I choose this font b/c of the simple lines, it is not overly cluncky or heavy*/
+    font-family: 'Josefin Sans', sans-serif;
+    font: 'Josefin Sans';
+}
+#interface{
+    float: left;
+    margin-left: 0px;
+}
+ul#tabs {
+    list-style-type: none; 
+    margin: 30px 0 0 0; 
+    padding: 0 0 0.3em 0; 
+}
+ul#tabs li {
+    display: inline;
+}
+ul#tabs li a { 
+    color: #42454a; 
+    background-color: #dedbde; 
+    border: 1px solid #CFE2F3; /*This color is directly pulled from the room design, continuing the soft edges*/ 
+    border-bottom: none; 
+    padding: 0.3em; 
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: 700;
+    border-radius:10px 10px 0px 0px;
+}
+ul#tabs li a:hover { 
+    background-color: #f1f0ee; 
+}
+ul#tabs li a.selected { 
+    color: #000; 
+    background-color: #f1f0ee; 
+    font-weight: bold; 
+    padding: 0.7em 0.3em 0.38em 0.3em; 
+}
+ul.tablink li.current{
+     background-color: #f1f0ee;
+}
+div.tabContent { 
+    border: 1px solid #CFE2F3;
+    padding: 10px; 
+    width:350px;
+    background-color: #f1f0ee; 
+    display: none;
+    border-radius:0px 10px 10px 10px;
+}
+div.tabContent.current{
+    display: inline-block;
+}
+#windowTitle{
+    text-align: center;
+    padding-top: 5px;
+    font-weight: 500;
+}
+#windowLabels{
+    padding: 5px;
+    width: 10px;
+    display: block;
+    transform:rotate(25deg); /*They are rotated so they can align over the column of radio buttons, to gain proximity to the object they are labeling*/
+    margin-top: -40px;
+}
+#open{
+    padding-left: 50px;
+    padding-bottom: 30px;
+    font-size: 13px; /*These labels, while important to understanding the system do not have to be as big as those that label each window*/
+}
+#half{
+    padding-left: 80px;
+    font-size: 13px;
+}
+#close{
+    padding-left:120px;
+    font-size: 13px;
+}
+
+.label{
+    padding-right: 20px;
+}
+.doorLabel{
+    text-align: right;
+}
+.alldoors{
+    font-weight: 600;
+}
+img.locks{
+    height: 35px;
+    width: 26px;
+    cursor: pointer;
+}
+.masterswitch{
+    font-weight: 600;
+}
+img.lights{
+    cursor: pointer; /* to make the images appear/act like buttons, so the user is hinted of the affordances*/
+}
+#heatTitle{
+    text-align: center;
+}
+input.heat{
+    -webkit-appearance: none;
+    width: 200px;
+    border-radius: 10px; /* made the same radius as the the slider iteself so users would understand that they are at the end of the range, if they saw a little bit of a gap it may seem they are not at the end of the spectrum*/
+    background: -webkit-linear-gradient(left,blue, red);
+    background: -o-linear-gradient(right,blue, red);
+    background: -moz-linear-gradient(right,blue, red);
+    background: linear-gradient(to right,blue, red); 
+}
+input.heat::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: #ecf0f1;
+	border: 1px solid #bdc3c7;
+	width: 20px;
+	height: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.roomDesign{
+    height:100%;
+    width:100%;
+}

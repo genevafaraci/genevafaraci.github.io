@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <Title>Control Room</Title>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,300italic,700" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css.css">
+        <script src="jquery-2.2.0.js"></script>
+        <script src="js.js"></script>
+        
+        
+    </head>
+    
+    <body>
+        <div id="interface">
+            <ul id="tabs">
+                <li class="tabLink current" data-tab="windows"><a href="#windows">Windows</a></li>
+                <li class="tabLink" data-tab="doors"><a href="#doors">Doors</a></li>
+                <li class="tabLink" data-tab="lights"><a href="#lights">Lights</a></li>
+                <li class="tabLink" data-tab="heating"><a href="#heating">Heating</a></li>
+            </ul>
+            <div class="tabContent current" id="windows">
+                <img src="WindowsOnly.png" alt="room design with windows highlighted" class="roomDesign">
+                <form action="">
+                    <div id="windowTitle"> Window Blind Levels</div>
+                    <div id="windowLabels">
+                        <div id="close">Closed</div>
+                        <div id="half">Halfway</div>
+                        <div id="open">Opened</div>
+                    </div>
+                    <span class="label">Window 1</span>
+                    <input type="radio" name="window1" value="open">
+                    <input type="radio" name="window1" value="half">
+                    <input type="radio" name="window1" value="close">
+                    <br>
+                    
+                    <span class="label">Window 2</span>
+                    <input type="radio" name="window2" value="open">
+                    <input type="radio" name="window2" value="half">
+                    <input type="radio" name="window2" value="close">
+                    <br>
+                    <span class="label">Window 3</span>
+                    <input type="radio" name="window3" value="open">
+                    <input type="radio" name="window3" value="half">
+                    <input type="radio" name="window3" value="close">
+                    <br>
+                    <span class="label">Window 4</span>
+                    <input type="radio" name="window4" value="open">
+                    <input type="radio" name="window4" value="half">
+                    <input type="radio" name="window4" value="close">
+                </form>
+            </div>
+            <div class="tabContent" id="doors">
+                <img src="DoorsOnly.png" alt="room design with doors highlighted" class="roomDesign">
+                <!--In each tab is the same image of the room, but the difference is in each version different things are lighted. Only labbeling the information needed for the user to interact with those set of controls.-->
+                <div class="door alldoors">
+                    <span class="doorLabel">All Doors</span>
+                    <img class="locks alldoors" src="lock.png">
+                </div>
+                <div class="door">
+                    <span class="doorLabel" >Door 1</span>
+                    <img class="locks door1" src="lock.png">
+                </div>
+                <div class="door">
+                    <span class="doorLabel">Door 2</span>
+                    <img class="locks door2" src="lock.png">
+                </div>
+            </div>
+            <div class="tabContent" id="lights">
+                <img src="LightsOnly.png" alt="room design with lights highlighted" class="roomDesign">
+                <form action="">
+                    <span class="masterswitch">Master Switch</span>
+                    <img class="lights masterswitch" src="lightOFF.png">
+                    <input type="range" name="lightALL" class="lightBulb lightALL" value="1" min="0" max="2">
+                    <img class="lights masterswitch" src="lightON.png">
+                    <br>
+                    
+                    <span>Light 1</span>
+                    <img class="lights light1" src="lightOFF.png">
+                    <input type="range" name="light1" class="lightBulb light1" value="1" min="0" max="2">
+                    <img class="lights light1" src="lightON.png">
+                    <br>
+                    
+                    <span>Light 2</span>
+                    <img class="lights light2" src="lightOFF.png">
+                    <input type="range" name="light2" class="lightBulb light2" value="1" min="0" max="2">
+                    <img class="lights light2" src="lightON.png">
+                    <br>
+                    
+                    <span>Light 3</span>
+                    <img class="lights light3" src="lightOFF.png">
+                    <input type="range" name="light3" class="lightBulb light3" value="1" min="0" max="2">
+                    <img class="lights light3" src="lightON.png">
+                    <br>
+                    
+                    <span>Light 4</span>
+                    <img class="lights light4" src="lightOFF.png">
+                    <input type="range" name="light4" class="lightBulb light4" value="1" min="0" max="2">
+                    <img class="lights light4" src="lightON.png">
+                    <br>
+                    
+                    <span>Light 5</span>
+                    <img class="lights light5" src="lightOFF.png">
+                    <input type="range" name="light5" class="lightBulb light5" value="1" min="0" max="2">
+                    <img class="lights light5" src="lightON.png">
+                    <br>
+                    
+                    <span>Light 6</span>
+                    <img class="lights light6" src="lightOFF.png">
+                    <input type="range" name="light6" class="lightBulb light6" value="1" min="0" max="2">
+                    <img class="lights light6" src="lightON.png">
+
+                </form>
+            </div>
+            <div class="tabContent" id="heating">
+                <p id="heatTitle">Heating and Cooling</p>
+                <span>55&#8457;</span><input type="range" name="heat" class="heat" value="65" min="50" max="100" data-popup-enabled="true"><span>100&#8457;</span>
+            </div>
+        </div>
+        
+    </body>
+</html>
